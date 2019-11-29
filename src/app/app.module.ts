@@ -10,7 +10,10 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 
 import { ContatoService } from './contato.service';
-import { ContatosComponent } from './contato/contato.component';
+import { ContatoComponent } from './contato/contato.component';
+
+import {ContatosComponent} from './contatos/contatos.component';
+
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AngularFireModule.initializeApp(environment.firebase),
