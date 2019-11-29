@@ -14,8 +14,8 @@ export class ContatosComponent implements OnInit {
 
   ngOnInit() {}
 
-    salvar(nome: string, telefone: string){
-     this.contatoService.insert({ nome, telefone} as Contatos);
+    salvar(nome: string, telefone: string, idade: number){
+     this.contatoService.insert({ nome, telefone, idade} as Contatos);
 }
   }
 

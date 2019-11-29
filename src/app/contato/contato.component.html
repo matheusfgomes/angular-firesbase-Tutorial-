@@ -2,12 +2,21 @@
 <label>Nome:
 <input #nome />
 </label>
+
 <br>
+
 <label>Telefone:
 <input #telefone />
 </label>
+
 <br>
-<button (click)="salvar(nome.value,telefone.value); nome.value='';telefone.value=' '">
+
+<label>Idade:
+<input #idade />
+</label>
+<br>
+
+<button (click)="salvar(nome.value,telefone.value, idade.value); nome.value='';telefone.value=' '; idade.value=' '">
 Salvar
 </button>
 </div>
